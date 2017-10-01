@@ -15,7 +15,7 @@ This container provides the Kubernetes client kubectl which can be used to inter
 `make docker_build`
 
 ## Run
-`docker run --rm lachlanevenson/k8s-kubectl:``git rev-parse --abbrev-ref HEAD`` --server=http://<server-name>:8080 get pods`
+`docker run --rm gunnertime/k8s-kubectl:``git rev-parse --abbrev-ref HEAD`` --server=http://<server-name>:8080 get pods`
 
 ## Data Container
 
