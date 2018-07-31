@@ -6,7 +6,7 @@
 [![](https://images.microbadger.com/badges/commit/campbelldgunn/k8s-kubectl.svg)](http://microbadger.com/images/campbelldgunn/k8s-kubectl "Get your own commit badge on microbadger.com")
 
 # Supported tags and respective `Dockerfile` links
-* `v1.8.0`, `latest`    [(v1.8.0/Dockerfile)](https://github.com/campbelldgunn/k8s-kubectl/blob/v1.8.0/Dockerfile)
+* `v1.11.1`, `latest`    [(v1.11.1/Dockerfile)](https://github.com/campbelldgunn/k8s-kubectl/blob/v1.11.1/Dockerfile)
 
 ## Overview
 This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
