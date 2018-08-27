@@ -1,0 +1,15 @@
+{
+    "app": {
+        "name": "k8s-kubectl", 
+        "namespace": "activelink",
+        "hostname": "utilities.activedisclosure.com"
+    },
+    "container_repo": {
+        "host": "adacr.azurecr.io",
+        "master_acct": "utilities",
+        "jenkins_creds_id": "adacr_creds",
+        "repo": "k8s-kubectl",
+        "dockeremail": ".",
+        "dockerfile": "./"
+    }
+}
