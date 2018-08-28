@@ -16,12 +16,6 @@ linuxPodTemplate(name: 'alpine-build', image: "alpine:${alpineVersion}") {
     def Map config = parseJson('Jenkinsfile.json')
     println "pipeline config ==> ${config}"
 
-    // continue only if pipeline enabled
-    if (!config.pipeline.enabled) {
-      println "pipeline disabled"
-      return
-    }
-
     def acct = utils.getContainerRepoAcct(config)
     def tags = utils.getContainerTags(config)
 
