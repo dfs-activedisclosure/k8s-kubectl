@@ -2,7 +2,7 @@
 
 def utils = new com.activedisclosure.Utils()
 
-podTemplate(label: 'jenkins-pipeline', nodeSelector: 'os=linux', containers : [
+podTemplate(label: 'jenkins-pipeline', nodeSelector: 'Role=Application.Linux', containers : [
     containerTemplate(name: 'jnlp', image: 'jenkinsci/jnlp-slave:3.14-1-alpine', orgs: '${computer.jnlpmac} ${computer.name}', workingDir: '/home/jenkins', resourceRequestCpu: '200m', resourceLimitCpu: '200m', resourceRequestMemory: '256Mi', resourceLimitMemory: '256Mi'),
     containerTemplate(name: 'docker', image: 'docker:17.10.0', command: 'cat', ttyEnabled: true)
 ],
