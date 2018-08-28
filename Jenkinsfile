@@ -1,8 +1,6 @@
 def utils = new com.activedisclosure.Utils()
 
-k8s-kubectlTemplate {
-  def buildPath = "/home/jenkins/go/src/github.com/dfs-activedisclosure/k8s-kubectl"
-  dir(buildPath) {
+linuxTemplate {
     stage('checkout code and setup Git env vars') {
       checkout scm
 
@@ -22,5 +20,4 @@ k8s-kubectlTemplate {
     stage('docker build and publish') {
       dockerBuildAndPublish(config, tags, acct)
     }
-  }
 }
