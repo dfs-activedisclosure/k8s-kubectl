@@ -18,30 +18,9 @@ k8s-kubectlTemplate {
 
     def acct  = utils.getContainerRepoAcct(config)
     def tags  = utils.getContainerTags(config)
-    def version_tag = tags.get(0)
 
     stage('docker build and publish') {
       dockerBuildAndPublish(config, tags, acct)
-    }
-
-    approval {
-      message = 'Test'
-      okText = 'Valid test?'
-      timeoutTime = 30      
-    }
-
-    if (utils.isMasterBranch()) {
-      stage('approve to production') {
-        approval {
-          message = 'Deploy to production?'
-          okText = 'Deploy'
-          timeoutTime = 10
-        }
-      }
-
-      stage('deploy to production') {
-        standardRelease(config, version_tag) {}
-      }
     }
   }
 }
