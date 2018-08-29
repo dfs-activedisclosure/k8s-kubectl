@@ -7,6 +7,7 @@
     "container_repo": {
         "host": "adacr.azurecr.io",
         "master_acct": "utilities",
+        "alt_acct": "utilities",
         "jenkins_creds_id": "adacr_creds",
         "repo": "k8s-kubectl",
         "dockeremail": ".",
