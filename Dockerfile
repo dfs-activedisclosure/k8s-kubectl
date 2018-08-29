@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER Campbell Gunn <campbelldgunn@gmail.com>
+MAINTAINER Campbell Gunn <campbell.d.gunn@dfsco.com>
 
 ARG VCS_REF
 ARG BUILD_DATE
