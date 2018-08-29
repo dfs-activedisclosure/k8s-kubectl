@@ -6,7 +6,7 @@
 [![](https://images.microbadger.com/badges/commit/campbelldgunn/k8s-kubectl.svg)](http://microbadger.com/images/campbelldgunn/k8s-kubectl "Get your own commit badge on microbadger.com")
 
 # Supported tags and respective `Dockerfile` links
-* `v1.11.1`, `latest`    [(v1.11.1/Dockerfile)](https://github.com/campbelldgunn/k8s-kubectl/blob/v1.11.1/Dockerfile)
+* `v1.11.1`, `latest`    [(v1.11.1/Dockerfile)](https://github.com/dfs-activedisclosure/k8s-kubectl/blob/v1.11.1/Dockerfile)
 
 ## Overview
 This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
@@ -15,7 +15,7 @@ This container provides the Kubernetes client kubectl which can be used to inter
 `make docker_build`
 
 ## Run
-`docker run --rm campbelldgunn/k8s-kubectl:``git rev-parse --abbrev-ref HEAD`` --server=http://<server-name>:8080 get pods`
+`docker run --rm adacr.azurecr.io/utilities/k8s-kubectl:``git rev-parse --abbrev-ref HEAD`` --server=http://<server-name>:8080 get pods`
 
 ## Data Container
 
