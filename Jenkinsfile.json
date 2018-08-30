@@ -1,8 +1,7 @@
 {
     "app": {
         "name": "k8s-kubectl", 
-        "namespace": "activelink",
-        "hostname": "utilities.activedisclosure.com"
+        "namespace": "utilities"
     },
     "container_repo": {
         "host": "adacr.azurecr.io",
