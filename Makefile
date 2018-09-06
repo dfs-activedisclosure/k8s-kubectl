@@ -1,6 +1,6 @@
 default: docker_build
 
-DOCKER_IMAGE ?= campbelldgunn/k8s-kubectl
+DOCKER_IMAGE ?= adacr.azurecr.io/utilities/k8s-kubectl
 GIT_BRANCH ?= `git rev-parse --abbrev-ref HEAD`
 
 ifeq ($(GIT_BRANCH), master)

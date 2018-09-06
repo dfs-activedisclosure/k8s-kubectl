@@ -1,13 +1,13 @@
 FROM alpine
 
-MAINTAINER Campbell Gunn <campbelldgunn@gmail.com>
+MAINTAINER Campbell Gunn <campbell.d.gunn@dfsco.com>
 
 ARG VCS_REF
 ARG BUILD_DATE
 
 # Metadata
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/campbelldgunn/k8s-kubectl" \
+      org.label-schema.vcs-url="https://github.com/dfs-activedisclosure/k8s-kubectl" \
       org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile"
 
